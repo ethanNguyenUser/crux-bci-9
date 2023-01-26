@@ -16,13 +16,13 @@ Noninvasive Electroencephalogram Based Control of a Robotic Arm for Reach and Gr
 https://www.nature.com/articles/srep38565
 Used EEG headset and minimal training to control robotic arm movement. No requirement of the subject to be looking at a monitor
 ______________________________________________________________________
-"Article name"
-"Article Link"
-"10-20 word summary"
+"Youtube Video - Machine Learning Prosthetic Arm concept"
+"https://www.youtube.com/watch?v=Ip83qSrecLo&t=738s"
+" attempting to use machine learning to control a prosthetic arm from my other body motions by training it through various postures while wearing a motion capture suit."
 ______________________________________________________________________
-"Article name"
-"Article Link"
-"10-20 word summary"
+"EEG Headset to Electric Wheelchair Mini-Project "
+"Ahttps://www.youtube.com/watch?v=-2UW8Hi1ZdI"
+"Created using an Emotiv Insight headset, we were able to train a basic push command, use accelerometer data, and use facial movement detection data to control a small RC car. "
 ______________________________________________________________________
 "Article name"
 "Article Link"
