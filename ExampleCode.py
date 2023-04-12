@@ -38,6 +38,7 @@ instr = visual.TextStim(win = win, text = "Press f when you see the red circle, 
 cross = visual.ShapeStim(win=win, name='Cross', vertices = 'cross', size = 3, fillColor = 'white', lineColor = 'white');
 stimBlue = visual.Circle(win = win, pos = [0,0], fillColor = 'blue', size = 3);
 stimRed = visual.Circle(win = win, pos = [0,0], fillColor = 'red', size = 3);
+
 # Draw instructions and update the screen
 instr.draw();
 win.flip();
@@ -46,15 +47,17 @@ keysPressed = event.waitKeys(timeStamped = True);
 # Create variable to store times
 times = {'start': 0, 'end': 0}
 
+# Loop through each trial
 for i in range(NUM_TRIALS):
     # Draw fixation cross and update the screen
     cross.draw();
     win.flip();
     
+    # Wait a random amount of time for the circle stimulus to show up
     timeToWait = MIN_TIME_TO_WAIT + COEFF_TIME_TO_WAIT * random.random()
     core.wait(timeToWait);
     
-    # Draw stimulus and update the screen        
+    # Draw stimulus and update the screen
     win.timeOnFlip(times, 'start')
     answer = 'f'
     if random.random() > 0.5:
@@ -65,7 +68,7 @@ for i in range(NUM_TRIALS):
     win.flip();
     keysPressed = event.waitKeys(timeStamped = True);
 
-    # logic
+    # Logic to determine whether 
     key = keysPressed[0];
     times['end'] = key[1];
     reactionTime = times['end'] - times['start']
