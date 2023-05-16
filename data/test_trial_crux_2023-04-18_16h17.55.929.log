@@ -1,0 +1,41 @@
+0.7292 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice', 'PTB', 'pyo', 'pygame'] (in that order).
+6.2413 	WARNING 	User requested fullscreen with size [1024  768], but screen is actually [1470, 956]. Using actual size
+6.7711 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, autoLog=True, backendConf=UNKNOWN, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x7faaaaf55310>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x7faa6282a400>, multiSample=False, name='window1', numSamples=2, pos=[367.5, 239.0], screen=0, size=array([2940, 1912]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=True, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+6.7713 	EXP 	window1: mouseVisible = True
+6.7723 	EXP 	window1: mouseVisible = False
+6.7724 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+6.7724 	EXP 	window1: recordFrameIntervals = False
+6.9383 	EXP 	window1: recordFrameIntervals = True
+7.1218 	EXP 	Screen (0) actual frame rate measured at 60.05Hz
+7.1219 	EXP 	window1: recordFrameIntervals = False
+8.5695 	EXP 	Created introtext = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='introtext', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+8.5706 	EXP 	Created headtext = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='headtext', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='head', units='height', win=Window(...), wrapWidth=1)
+8.5716 	EXP 	Created feeettext = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='feeettext', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='feet', units='height', win=Window(...), wrapWidth=1)
+8.5731 	EXP 	Created leftarmtext = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='leftarmtext', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='left arm', units='height', win=Window(...), wrapWidth=1)
+8.5745 	EXP 	Created righarmtext = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='righarmtext', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='right arm', units='height', win=Window(...), wrapWidth=1)
+8.5755 	EXP 	Created eyestext = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='eyestext', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='eyes', units='height', win=Window(...), wrapWidth=1)
+8.5850 	EXP 	introtext: autoDraw = True
+9.5263 	DATA 	Keypress: v
+9.8576 	EXP 	Created sequence: fullRandom, trialTypes=1, nReps=3, seed=None
+9.8580 	EXP 	New trial (rep=0, index=0): None
+9.8611 	DATA 	Keypress: space
+9.8712 	EXP 	introtext: autoDraw = False
+9.8712 	EXP 	headtext: autoDraw = True
+16.8712 	EXP 	headtext: autoDraw = False
+16.8712 	EXP 	headtext: autoDraw = False
+16.8712 	EXP 	feeettext: autoDraw = True
+23.8715 	EXP 	feeettext: autoDraw = False
+23.8715 	EXP 	feeettext: autoDraw = False
+23.8715 	EXP 	leftarmtext: autoDraw = True
+30.8711 	EXP 	leftarmtext: autoDraw = False
+30.8711 	EXP 	leftarmtext: autoDraw = False
+30.8711 	EXP 	righarmtext: autoDraw = True
+37.8710 	EXP 	righarmtext: autoDraw = False
+37.8710 	EXP 	righarmtext: autoDraw = False
+37.8710 	EXP 	eyestext: autoDraw = True
+44.8553 	EXP 	New trial (rep=1, index=0): None
+44.8709 	EXP 	eyestext: autoDraw = False
+44.8709 	EXP 	eyestext: autoDraw = False
+44.8709 	EXP 	headtext: autoDraw = True
+48.1079 	DATA 	Keypress: escape
+48.2865 	EXP 	window1: mouseVisible = True

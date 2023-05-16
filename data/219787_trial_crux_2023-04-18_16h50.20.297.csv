@@ -1,0 +1,6 @@
+﻿conditions,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,introtext.started,introspace.started,introspace.keys,introspace.rt,stimulus.started,participant,session,date,expName,psychopyVersion,frameRate,
+,,,,,7.60430095799984,7.60430095799984,space,4.820934167000814,,219787,001,2023-04-18_16h50.20.297,trial_crux,2022.2.5,59.950989945639165,
+eyes,0,0,0,3,,,,,12.474334791999354,219787,001,2023-04-18_16h50.20.297,trial_crux,2022.2.5,59.950989945639165,
+right arm,0,1,1,2,,,,,19.467670500000168,219787,001,2023-04-18_16h50.20.297,trial_crux,2022.2.5,59.950989945639165,
+left arm,0,2,2,1,,,,,26.467588124999565,219787,001,2023-04-18_16h50.20.297,trial_crux,2022.2.5,59.950989945639165,
+,,,,,,,,,33.46764437499951,,,,,,,
