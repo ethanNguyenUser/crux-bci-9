@@ -1,7 +1,7 @@
 # CruX BCI Team 9
 ## CruX BCI Team 9 GitHub Repository
 
-Project Proposal Google Doc Version: https://docs.google.com/document/d/1CXb2ZEh6SnwkfzvR8MbCsqIKvdNNTY0F7p7aPkmKjRU/edit?pli=1
+[Google Doc Version](https://docs.google.com/document/d/1CXb2ZEh6SnwkfzvR8MbCsqIKvdNNTY0F7p7aPkmKjRU/edit?pli=1)
 
 ## Context-Dependent Control of Robotics Systems (CDCRS)
 
