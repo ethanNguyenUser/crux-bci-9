@@ -5,7 +5,7 @@ Project Proposal Google Doc Version: https://docs.google.com/document/d/1CXb2ZEh
 
 ##Context-Dependent Control of Robotics Systems (CDCRS)
 
-###Narrative
+### Narrative
 The goal of our project is to enable subjects to provide directional input to their BCI to control a robotics system, and when they think to flick a “switch,” they may switch to controlling a different system that uses the same underlying directional inputs. We plan to have the directions of “left, right, down, and up” as well as the 5th “context switch” control for a total of five inputs the BCI will have to map to from EEG readings. The two main “programs” that the subject may switch between are the robotic arm mode and electric wheelchair mode. Past BCI’s that manipulate a certain robotic component are more niche and their applications, sticking to one device to be controlled at a time. CDCRS may allow for paralyzed patients to both traverse and manipulate their environment by either controlling the electric wheelchair or robotic arm, respectively. Past research (nature.com/articles/srep38565) has also shown that it is possible to produce categorizable EEG signals that only rely on the subject thinking in certain directions by motor imagery, which would be an improvement over requiring visual attention of a screen to elicit a signal.
 
 ###Overall Aim
