@@ -3,20 +3,20 @@
 
 Project Proposal Google Doc Version: https://docs.google.com/document/d/1CXb2ZEh6SnwkfzvR8MbCsqIKvdNNTY0F7p7aPkmKjRU/edit?pli=1
 
-##Context-Dependent Control of Robotics Systems (CDCRS)
+## Context-Dependent Control of Robotics Systems (CDCRS)
 
 ### Narrative
 The goal of our project is to enable subjects to provide directional input to their BCI to control a robotics system, and when they think to flick a “switch,” they may switch to controlling a different system that uses the same underlying directional inputs. We plan to have the directions of “left, right, down, and up” as well as the 5th “context switch” control for a total of five inputs the BCI will have to map to from EEG readings. The two main “programs” that the subject may switch between are the robotic arm mode and electric wheelchair mode. Past BCI’s that manipulate a certain robotic component are more niche and their applications, sticking to one device to be controlled at a time. CDCRS may allow for paralyzed patients to both traverse and manipulate their environment by either controlling the electric wheelchair or robotic arm, respectively. Past research (nature.com/articles/srep38565) has also shown that it is possible to produce categorizable EEG signals that only rely on the subject thinking in certain directions by motor imagery, which would be an improvement over requiring visual attention of a screen to elicit a signal.
 
-###Overall Aim
+### Overall Aim
 	To develop a BCI that uses subjects’ motor imagery signal readings to control a virtual cursor that enables directional input and context-switching between controlling either a robotic arm or electric wheelchair.
   
-###Specific Aims
+### Specific Aims
 IDevelop a robust software that can detect a subject’s inputs to switch between program contexts: We will design a software that based on EEG readings from the BCI, can robustly detect a ‘switch’ action which can transfer a user’s input from one device to another. In our case, we hope this will be from a robotic arm to a wheelchair prototype and vice versa. The robustness of our software will be a key priority, as the value of this capability would be, in large part, based on its reliability. This program will also read-in directions by having the subject think in the desired directions after sufficient training of the model.
 - Control a robotic arm using a virtual cursor: We plan to use the directional input from the EEG readings to map the 2D translational position of the end-effector using inverse kinematics in a plane. We will have to establish a suitable sensitivity for the model, to take into account reaction time of the robotic arm and noise/variability in our EEG readings. 
 - Control a proof-of-concept prototype for an electric wheelchair using a virtual cursor: We hope to map directional inputs to simple one axis of translational movement and one axis of rotational movement for a wheelchair prototype using a constant-force model. We will have to establish a suitable sensitivity for the model to take into account the reaction time of the wheelchair prototype and noise/variability in our EEG readings.
 
-###Significance
+### Significance
 Context-Dependent Control of Robotics Systems (CDCRS) would enable paralyzed and disabled patients to replace loss of function(s) in:
 Movement: patients could control an electric wheelchair for transportation
 Dexterity: patients could control a robotic arm to perform basic object manipulation tasks like grabbing and holding food for instance
@@ -27,12 +27,12 @@ Extensibility: CDCRS would be nicely suited to be extended upon by other develop
 - A drone/RC vehicle
 Musical instruments
 
-###Approach
+### Approach
 We will primarily be following the methods outline in the 2016 paper, “Noninvasive Electroencephalogram Based Control of a Robotic Arm for Reach and Grasp Tasks” (nature.com/articles/srep38565#Sec17), which demonstrates the control of a robotic arm using the BCI 2000 software’s virtual cursor feature.
 Data will be collected on 2-3 subjects, and we may try having the subjects train to variate sensorimotor rhythm by instructing them to think to move in certain directions in their hands and categorizing the recorded EEG data signals relative to the instructions given.
 If we have extra time, we will also consider coding the machine learning model from scratch using the various Python libraries (tensorflow and PyTorch) that were taught to us in the Fall workshop. The drawback to creating our own machine learning model would obviously be the extra time needed to understand and debug our own program, whereas the BCI 2000 software comes for free, is tested for bugs, and is proven to be compatible with controlling robotic systems live. The benefits however of creating our own model is perhaps greater customizability in our program, as there may be certain features that we want that would be harder to add by editing someone else’s code rather than our own (the code is open source, so that is an option). BCI 2000 is also an .exe program, so it isn’t native to MacOS, which may make it harder for members with only Mac’s to easily use the software.
 
-###Experimental Design Proposal
+### Experimental Design Proposal
 Question
 How can we create a program context-switching software reliant only on a subject’s thoughts? If such a software is created, what are some of the applications to assistive technology, and how could this software be effectively utilized by impaired subpopulations?
 Hypothesis
@@ -42,7 +42,7 @@ Accuracy of responsiveness: to be an effective aid the BCI integrated software w
 Speed: in order for assistive technology to be effectively applied and used by people, it must have a high speed. This can be measured as the time delay between thought and the desired action running. We may also compare our BCI efficacy against a control who simply uses a physical controller/keyboard to control the robotic system.
 If a bias is introduced, we should create the software such that it is averse to false positives: preferable to find difficulty to switch rather than spontaneously switch without command
 
-###Accuracy of responsiveness
+### Accuracy of responsiveness
 How accurately am I able to evaluate this metric?
 This metric can’t be measured with extreme accuracy as it isn't able to be quantified, as opposed to other metrics like speed. The only useful numeric statistic derived from an experiment on this metric would be the percentage of accuracy (that is, how often the response matches the desired outcome). 
 Alternatively, we can measure the degree to which the system is accurate; this may be difficult to do with more advanced movements, but for simpler objectives, we can measure the distance it is off by, etc. 
@@ -50,7 +50,7 @@ Are there multiple methods of evaluating this metric?
 Yes, we can do a 2-measurement system where the response is either correct or incorrect. We can also measure the degree to which responses are accurate as stated above. This can be done in multiple ways such as distance off from desired position, functioning to a certain degree (such as 3 fingers moving when a fist was desired), and how long the software can maintain the desired output (length of accuracy). 
 How controllable are the factors that may cause variability in this metric?
 It is possible that, apart from the actual software, that human subjects can result in variability. (demographically, we can consider physical age, (mental age? not sure how that would be measured reasonably) level of neurological function, etc.). If we primarily use people who are working on the software itself, it could very reasonably be controlled, as they will be most familiar with it. (Consider, also, the level of communication needed for people unfamiliar with the software to properly use it…does it require very specific instructions or will it be built to be more intuitive?) 
-###Propose an experiment.
+### Propose an experiment.
 Train a model to interpret motor-imagery commands using BCI 2000 to control a virtual cursor for inputs to the electric wheelchair and robotic arm.
 
 Figure 1. Virtual Cursor setup
@@ -83,7 +83,7 @@ If the response is the desired outcome, the context switching and 4 directional 
 Detail potential confounding factors, biases, or other logical flaws with the experimental design and explain why they cannot be addressed or how to best address them.
 We will have to address the problem of ‘probability’, because the model that we train to process our EEG data to decide on a directional output will essentially be deciding on these outputs based on a probability of accuracy. If we make this threshold very low, it is likely that we have a directional output which is unsteady/not continuously directed and probably quickly alternates between directions. On the other hand, we do not want it to be an exhaustive process for a continuous directional output, and we would like to reduce lag. 
 
-###Data Flow
+### Data Flow
 What is eliciting a signal from the subject? 
 When measuring the accuracy and speed metrics, the subject is creating the signal to manipulate the BCI device based on our instructions from PsychoPy. From the rounds of training where the software will learn to differentiate between the subjects’ different cues of direction, 
 
@@ -109,7 +109,7 @@ Indirectly yes, as the signal generated by the user will induce a change in the 
 
 Figure 3. Diagram showing the directions data will be sent between the hardware/software
 
-###References
+### References
 Noninvasive Electroencephalogram Based Control of a Robotic Arm for Reach and Grasp Tasks: nature.com/articles/srep38565
 BCI 2000: ieeexplore.ieee.org/document/1300799
 BCI softwares: https://sccn.ucsd.edu/~scott/pdf/Brunner_BCI11.pdf
