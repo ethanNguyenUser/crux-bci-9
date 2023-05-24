@@ -1,5 +1,5 @@
 # CruX BCI Team 9
-##CruX BCI Team 9 GitHub Repository
+## CruX BCI Team 9 GitHub Repository
 
 Project Proposal Google Doc Version: https://docs.google.com/document/d/1CXb2ZEh6SnwkfzvR8MbCsqIKvdNNTY0F7p7aPkmKjRU/edit?pli=1
 
@@ -9,7 +9,7 @@ Project Proposal Google Doc Version: https://docs.google.com/document/d/1CXb2ZEh
 The goal of our project is to enable subjects to provide directional input to their BCI to control a robotics system, and when they think to flick a “switch,” they may switch to controlling a different system that uses the same underlying directional inputs. We plan to have the directions of “left, right, down, and up” as well as the 5th “context switch” control for a total of five inputs the BCI will have to map to from EEG readings. The two main “programs” that the subject may switch between are the robotic arm mode and electric wheelchair mode. Past BCI’s that manipulate a certain robotic component are more niche and their applications, sticking to one device to be controlled at a time. CDCRS may allow for paralyzed patients to both traverse and manipulate their environment by either controlling the electric wheelchair or robotic arm, respectively. Past research (nature.com/articles/srep38565) has also shown that it is possible to produce categorizable EEG signals that only rely on the subject thinking in certain directions by motor imagery, which would be an improvement over requiring visual attention of a screen to elicit a signal.
 
 ### Overall Aim
-	To develop a BCI that uses subjects’ motor imagery signal readings to control a virtual cursor that enables directional input and context-switching between controlling either a robotic arm or electric wheelchair.
+To develop a BCI that uses subjects’ motor imagery signal readings to control a virtual cursor that enables directional input and context-switching between controlling either a robotic arm or electric wheelchair.
   
 ### Specific Aims
 IDevelop a robust software that can detect a subject’s inputs to switch between program contexts: We will design a software that based on EEG readings from the BCI, can robustly detect a ‘switch’ action which can transfer a user’s input from one device to another. In our case, we hope this will be from a robotic arm to a wheelchair prototype and vice versa. The robustness of our software will be a key priority, as the value of this capability would be, in large part, based on its reliability. This program will also read-in directions by having the subject think in the desired directions after sufficient training of the model.
