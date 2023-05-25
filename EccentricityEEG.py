@@ -1,26 +1,21 @@
 ## Base Program
 from psychopy import visual, core, event, gui
-import os, csv, time, random
-
-# Emotiv
-from psychopy.hardware import emotiv
-from psychopy import visual, core
+import os, csv, time, random, math
 
 # Constants
-NUM_TRIALS_PER_TYPE = 3
-typesOfTrials = 3
-maxTrials = NUM_TRIALS_PER_TYPE * (typesOfTrials+1)
+NUM_TRIALS = 10
+DIRECTIONS = ["head", "left hand", "right hand", "both hands", "legs"]
+MAX_TRIALS = NUM_TRIALS_PER_TYPE * (NUM_DIRECTIONS + 1)
 
 # time to wait = MIN_TIME_TO_WAIT + COEFF_TIME_TO_WAIT * ContinuousUniform([0,1])
-MIN_TIME_TO_WAIT = 1
-COEFF_TIME_TO_WAIT = 2
+TIME_TO_WAIT = 0.1
 
 # record information
-date = time.strftime("%y-%m-%d");
+date = time.strftime("%y-%m-%d")
 startTime = time.strftime("%H-%M-%S")
 
 expInfo = {'subject': '', 'date' : date, 'start time' : startTime};
-dlg = gui.DlgFromDict(dictionary=expInfo, sortKeys=False, title='user input')
+dlg = gui.DlgFromDict(dictionary = expInfo, sortKeys = False, title = 'user input')
 if dlg.OK == False:
     core.quit();
 
@@ -42,22 +37,8 @@ headings = ('trial','keyPressed','reactionTime','correctness');
 writer.writerow(headings);
 
 # Create instructions, fixation cross, and stimulus
-instr = visual.TextStim(win = win, text = "You will be shown a letter. Press v if it is the letter E, b if it is the letter B, and n if it is the letter P. To start, press any key", font = "arial", pos = [0,0]);
-cross = visual.ShapeStim(win=win, name='Cross', vertices = 'cross', size = 3, fillColor = 'white', lineColor = 'white');
-eLeft = visual.TextStim(win = win, text = "E", font = "arial", pos = [-30,0], height = 3);
-eCenter = visual.TextStim(win = win, text = "E", font = "arial", pos = [0,0], height = 3);
-eRight = visual.TextStim(win = win, text = "E", font = "arial", pos = [30,0], height = 3);
-bLeft = visual.TextStim(win = win, text = "B", font = "arial", pos = [-30,0], height = 3);
-bCenter = visual.TextStim(win = win, text = "B", font = "arial", pos = [0,0], height = 3);
-bRight = visual.TextStim(win = win, text = "B", font = "arial", pos = [30,0], height = 3);
-pLeft = visual.TextStim(win = win, text = "P", font = "arial", pos = [-30,0], height = 3);
-pCenter = visual.TextStim(win = win, text = "P", font = "arial", pos = [0,0], height = 3);
-pRight = visual.TextStim(win = win, text = "P", font = "arial", pos = [30,0], height = 3);
-stimCenter = visual.Circle(units = 'deg', win = win, pos = [0,0], fillColor = 'white', size = 3);
-#stimLeft15 = visual.Circle(units = 'deg', win = win, pos = [-15,0], fillColor = 'white', size = 3);
-stimLeft30 = visual.Circle(units = 'deg', win = win, pos = [-30,0], fillColor = 'white', size = 3);
-#stimRight15 = visual.Circle(units = 'deg', win = win, pos = [15,0], fillColor = 'white', size = 3);
-stimRight30 = visual.Circle(units = 'deg', win = win, pos = [30,0], fillColor = 'white', size = 3);
+instr = visual.TextStim(win = win, text = "You will be shown a crosshair. Shortly after, you will be shown a letter. Keep you gaze on the position of the crosshair throughout the experiment. Press v if the letter is the letter E, b if it is the letter B, and n if it is the letter P. To start, press any key", font = "arial", pos = [0,0]);
+cross = visual.ShapeStim(win = win, name = 'Cross', vertices = 'cross', size = 3, fillColor = 'white', lineColor = 'white');
 
 # Draw instructions and update the screen
 instr.draw();
@@ -71,88 +52,23 @@ times = {'start': 0, 'end': 0}
 # use a global variable to always have access to core.Clock();
 routineTimer = core.Clock()
 
-# starts recording
-cortex_rec = visual.BaseVisualStim(win=win, name="cortex_rec")
-cortex_obj = emotiv.Cortex(subject = expInfo['subject'])
-
-leftCount = 0;
-rightCount = 0;
-midCount = 0;
-
-for i in range(maxTrials):
+for i in range(MAX_TRIALS):
     # Draw fixation cross and update the screen
     cross.draw();
     win.flip();
     
     timeToWait = MIN_TIME_TO_WAIT + COEFF_TIME_TO_WAIT * random.random()
-    core.wait(timeToWait);
+    core.wait(timeToWait)
     
-    # Draw stimulus and update the screen        
+    # Draw stimulus and update the screen
     win.timeOnFlip(times, 'start')
-    uniformRandom = random.random()
-    letterRandom = random.random()
-    answer = 'b'
-#    if uniformRandom < 0.2:
-#        stimCenter.draw()
-#    elif uniformRandom < 0.4:
-#        stimLeft15.draw()
-#        ivalue = "3"
-#    elif uniformRandom < 0.6:
-#        stimLeft30.draw()
-#        ivalue = "4"
-#    elif uniformRandom < 0.8:
-#        stimRight15.draw()
-#        ivalue = "5"
-#    else:
-#        stimRight30.draw()
-#        ivalue = "6"
-    if uniformRandom < 0.33333:
-        if letterRandom < 0.33333:
-            eCenter.draw()
-            answer = 'v'
-        elif letterRandom < 0.66666:
-            bCenter.draw()
-            answer = 'b'
-        else:
-            pCenter.draw()
-            answer = 'n'
-        midCount+=1
-    elif uniformRandom < 0.66666:
-        if letterRandom < 0.33333:
-            eLeft.draw()
-            answer = 'v'
-        elif letterRandom < 0.66666:
-            bLeft.draw()
-            answer = 'b'
-        else:
-            pLeft.draw()
-            answer = 'n'
-        leftCount+=1
-    else:
-        if letterRandom < 0.33333:
-            eRight.draw()
-            answer = 'v'
-        elif letterRandom < 0.66666:
-            bRight.draw()
-            answer = 'b'
-        else:
-            pRight.draw()
-            answer = 'n'
-        rightCount+=1
-    # Emotiv
-    t = routineTimer.getTime()
-    tThisFlip = win.getFutureFlipTime(clock=routineTimer)
-    delta_time = tThisFlip - t
-    answerint = "1";
-    if answer == 'v':
-        answerint = "1";
-    elif answer == 'b':
-        answerint = "2";
-    elif answer == 'n':
-        answerint = "3";
-    cortex_obj.inject_marker(value = answerint, label = 'stim', delta_time = delta_time)
+    directionRandom = math.floor(NUM_DIRECTIONS * random.random()) #gives a random integer from 0 to 4
+    letterRandom = math.floor(len(LETTERS) * random.random()) #gives a random integer from 0 to 2
+    directionalStimuli[letterRandom * NUM_DIRECTIONS + directionRandom].draw() #draws the appropriate stimuli
+    answer = KEY_LETTERS[letterRandom]
+    DIRECTION_COUNT[directionRandom] += 1
     
-    # Flip    
+    # Flip
     win.flip();
     keysPressed = event.waitKeys(timeStamped = True);
     win.flip();
@@ -164,15 +80,19 @@ for i in range(maxTrials):
     reactionTime = times['end'] - times['start']
     isCorrect = key == answer
     
-    
-    # output
-    trialOutput = (i,key[0],reactionTime, isCorrect);
+    # Output
+    trialOutput = (i, key[0], reactionTime, isCorrect);
     writer.writerow(trialOutput);
     
-    if(rightCount >= NUM_TRIALS_PER_TYPE and leftCount >= NUM_TRIALS_PER_TYPE and midCount >=NUM_TRIALS_PER_TYPE):
+    # Check we've satsifed the minimum number of trials for each letter
+    meetsTrialCountRequirement = True
+    for j in DIRECTION_COUNT:
+        if j < NUM_TRIALS_PER_TYPE:
+            meetsTrialCountRequirement = False
+    if meetsTrialCountRequirement:
         break;
 
-csvFile.close();
+csvFile.close()
 cortex_obj.close_session()
 
 instr = visual.TextStim(win = win, text = "Thank you for taking part in our experiment! Press any key to exit.", font = "arial", pos = [0,0]);
