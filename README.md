@@ -7,7 +7,6 @@
 ## [Presentation Format](https://docs.google.com/presentation/d/1BqtsrBfNDqGUVem8tdIMUvQsRFDbliThsNez5g8zBbo/edit#slide=id.p)
 
 ## Proposal
-
 [Google Doc Version of Proposal](https://docs.google.com/document/d/1CXb2ZEh6SnwkfzvR8MbCsqIKvdNNTY0F7p7aPkmKjRU/edit?pli=1)
 
 ## Context-Dependent Control of Robotics Systems (CDCRS)
