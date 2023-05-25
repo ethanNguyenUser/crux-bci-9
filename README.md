@@ -61,6 +61,7 @@ Train a model to interpret motor-imagery commands using BCI 2000 to control a vi
 ![Virtual Cursor](https://github.com/ethanNguyenUser/crux-bci-9/blob/main/Pictures/virtualCursor.png)
 
 *Figure 1. Virtual Cursor setup*
+
 The subject will move the virtual cursor by using the BCI 2000 cursor module. When the cursor touches the regions denoting one of the four directional inputs, the BCI will register that as an input and continue holding that input
 Measure accuracy and speed of the robotic arm using PsychoPy protocols on a subject using the BCI
 Instruct the subject to prioritize accuracy over speed when conducting the following trials.
@@ -68,6 +69,7 @@ Instruct the subject to prioritize accuracy over speed when conducting the follo
 ![PsychoPy GUI](https://github.com/ethanNguyenUser/crux-bci-9/blob/main/Pictures/psychoPyInstructions.png)
 
 *Figure 2. Example instructions from PsychoPy GUI*
+
 Prompt the subject with one of the following random commands: “Move system right,” “Move system left,” “Move system up,” “Move system down”
 For the duration of the command being shown, the subject continuously tries to move the robotic system in this direction using motor imagery.
 Record accuracy as a time-measure comparing when: instruction A is being shown to subject vs. output A is being recorded by the BCI. 
