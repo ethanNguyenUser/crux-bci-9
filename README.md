@@ -43,8 +43,10 @@ How can we create a program context-switching software reliant only on a subject
 #### Hypothesis
 A brain computer interface that allows for robust context-switching between two modes–controlling a robotic arm for object manipulation and controlling an electric wheelchair for environment traversal–can be developed by analyzing signals produced by the subject’s motor imagery.
 #### Metrics
-##### Accuracy of responsiveness: to be an effective aid the BCI integrated software would need to have a high accuracy of responses, as it would need to perform tasks routinely. This can be measured through the level of accuracy of a subject’s desired response, versus the actual recorded response.
-##### Speed: in order for assistive technology to be effectively applied and used by people, it must have a high speed. This can be measured as the time delay between thought and the desired action running. We may also compare our BCI efficacy against a control who simply uses a physical controller/keyboard to control the robotic system.
+##### Accuracy of responsiveness:
+To be an effective aid the BCI integrated software would need to have a high accuracy of responses, as it would need to perform tasks routinely. This can be measured through the level of accuracy of a subject’s desired response, versus the actual recorded response.
+##### Speed:
+In order for assistive technology to be effectively applied and used by people, it must have a high speed. This can be measured as the time delay between thought and the desired action running. We may also compare our BCI efficacy against a control who simply uses a physical controller/keyboard to control the robotic system.
 If a bias is introduced, we should create the software such that it is averse to false positives: preferable to find difficulty to switch rather than spontaneously switch without command
 
 ### Accuracy of responsiveness
