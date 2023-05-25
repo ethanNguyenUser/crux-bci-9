@@ -1,12 +1,10 @@
 # CruX BCI Team 9
 ## CruX BCI Team 9 GitHub Repository
 
+## Poster
 ![Poster](https://github.com/ethanNguyenUser/crux-bci-9/blob/main/BCI%20Poster/1.png)
 
-
-## Poster
-[Presentation Format](https://docs.google.com/presentation/d/1BqtsrBfNDqGUVem8tdIMUvQsRFDbliThsNez5g8zBbo/edit#slide=id.p)
-
+## [Presentation Format](https://docs.google.com/presentation/d/1BqtsrBfNDqGUVem8tdIMUvQsRFDbliThsNez5g8zBbo/edit#slide=id.p)
 
 ## Proposal
 
