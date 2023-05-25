@@ -2,6 +2,8 @@
 ## CruX BCI Team 9 GitHub Repository
 
 [Google Doc Version](https://docs.google.com/document/d/1CXb2ZEh6SnwkfzvR8MbCsqIKvdNNTY0F7p7aPkmKjRU/edit?pli=1)
+[Presentation](https://docs.google.com/presentation/d/1BqtsrBfNDqGUVem8tdIMUvQsRFDbliThsNez5g8zBbo/edit#slide=id.p)
+![Poster](https://github.com/ethanNguyenUser/crux-bci-9/blob/main/BCI%20Poster/1.png)
 
 ## Context-Dependent Control of Robotics Systems (CDCRS)
 
