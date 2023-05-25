@@ -72,29 +72,30 @@ Measure accuracy and speed of the robotic arm using PsychoPy protocols on a subj
 
 *Figure 2. Example instructions from PsychoPy GUI*
 
-1. Prompt the subject with one of the following random commands: “Move system right,” “Move system left,” “Move system up,” “Move system down”
-2. For the duration of the command being shown, the subject continuously tries to move the robotic system in this direction using motor imagery.
-3. Record accuracy as a time-measure comparing when: instruction A is being shown to subject vs. output A is being recorded by the BCI. 
-4. Record the time between when the movement commands are issued vs. when the robotic system moves
-After at least four or so movement commands (there will be a random amount more, perhaps up to ten commands total), prompt the subject to switch contexts to control the other robotic system.
-Record the time it takes for a context to be switched and whether there were other commands issued between the instruction and the context switch
-Repeat steps b-f 15 times (should take about 10 minutes) for a total of 15 context switches
-Average the accuracy of time spent on the right movement command over the 100 trials, which may be called the “Movement Accuracy Metric”
-Average the time for each movement command over the 100 trials, which may be called the “Movement Response Time Metric”
-Average the the accuracy and time spent to complete the Context Switch command, which may be called the “Context Switch Response Time Metric”
-Measure accuracy and speed of the robotic arm using PsychoPy protocols on a control subject not using the BCI
-Have the control subject use a real mouse instead of a virtual cursor to repeat the PsychoPy protocol.
-Tweak the BCI based on comparisons between the control subject and the BCI-subject as well as by using the other objective measurements of speed/accuracy not based on comparison.
+  - Prompt the subject with one of the following random commands: “Move system right,” “Move system left,” “Move system up,” “Move system down”
+  - For the duration of the command being shown, the subject continuously tries to move the robotic system in this direction using motor imagery.
+  - Record accuracy as a time-measure comparing when: instruction A is being shown to subject vs. output A is being recorded by the BCI. 
+  - Record the time between when the movement commands are issued vs. when the robotic system moves
+  - After at least four or so movement commands (there will be a random amount more, perhaps up to ten commands total), prompt the subject to switch contexts to control the other robotic system.
+  - Record the time it takes for a context to be switched and whether there were other commands issued between the instruction and the context switch
+  - Repeat steps b-f 15 times (should take about 10 minutes) for a total of 15 context switches
+  - Average the accuracy of time spent on the right movement command over the 100 trials, which may be called the “Movement Accuracy Metric”
+  - Average the time for each movement command over the 100 trials, which may be called the “Movement Response Time Metric”
+  - Average the the accuracy and time spent to complete the Context Switch command, which may be called the “Context Switch Response Time Metric”
+3. Measure accuracy and speed of the robotic arm using PsychoPy protocols on a control subject not using the BCI
+  - Have the control subject use a real mouse instead of a virtual cursor to repeat the PsychoPy protocol.
+  - Tweak the BCI based on comparisons between the control subject and the BCI-subject as well as by using the other objective measurements of speed/accuracy not based on comparison.
 
 
-1) Context-switching 
-2) 2D movement in 4 main directions
-Detail how the experiment will test the hypothesis.
-Subjects will be shown flashcards of various commands and think of that command (ex. switch to prosthetic right arm, move left, move up). Measure the outcome (accuracy, speed, etc.).
-Discuss possible outcomes ahead of time and what they would mean with respect to the hypothesis.
-If the response is the desired outcome, the context switching and 4 directional movement program are effective
-Detail potential confounding factors, biases, or other logical flaws with the experimental design and explain why they cannot be addressed or how to best address them.
-We will have to address the problem of ‘probability’, because the model that we train to process our EEG data to decide on a directional output will essentially be deciding on these outputs based on a probability of accuracy. If we make this threshold very low, it is likely that we have a directional output which is unsteady/not continuously directed and probably quickly alternates between directions. On the other hand, we do not want it to be an exhaustive process for a continuous directional output, and we would like to reduce lag. 
+4.
+  - Context-switching 
+  - 2D movement in 4 main directions
+  - Detail how the experiment will test the hypothesis.
+    - Subjects will be shown flashcards of various commands and think of that command (ex. switch to prosthetic right arm, move left, move up). Measure the outcome (accuracy, speed, etc.).
+  - Discuss possible outcomes ahead of time and what they would mean with respect to the hypothesis.
+    - If the response is the desired outcome, the context switching and 4 directional movement program are effective
+  - Detail potential confounding factors, biases, or other logical flaws with the experimental design and explain why they cannot be addressed or how to best address them.
+    - We will have to address the problem of ‘probability’, because the model that we train to process our EEG data to decide on a directional output will essentially be deciding on these outputs based on a probability of accuracy. If we make this threshold very low, it is likely that we have a directional output which is unsteady/not continuously directed and probably quickly alternates between directions. On the other hand, we do not want it to be an exhaustive process for a continuous directional output, and we would like to reduce lag. 
 
 ### Data Flow
 What is eliciting a signal from the subject? 
