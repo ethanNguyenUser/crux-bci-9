@@ -1,5 +1,4 @@
-# CruX BCI Team 9
-## CruX BCI Team 9 GitHub Repository
+# CruX BCI Team 9 GitHub Repository
 
 ## Poster
 ![Poster](https://github.com/ethanNguyenUser/crux-bci-9/blob/main/BCI%20Poster/1.png)
