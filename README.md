@@ -38,36 +38,36 @@ Data will be collected on 2-3 subjects, and we may try having the subjects train
 If we have extra time, we will also consider coding the machine learning model from scratch using the various Python libraries (tensorflow and PyTorch) that were taught to us in the Fall workshop. The drawback to creating our own machine learning model would obviously be the extra time needed to understand and debug our own program, whereas the BCI 2000 software comes for free, is tested for bugs, and is proven to be compatible with controlling robotic systems live. The benefits however of creating our own model is perhaps greater customizability in our program, as there may be certain features that we want that would be harder to add by editing someone else’s code rather than our own (the code is open source, so that is an option). BCI 2000 is also an .exe program, so it isn’t native to MacOS, which may make it harder for members with only Mac’s to easily use the software.
 
 ### Experimental Design Proposal
-Question
+#### Question
 How can we create a program context-switching software reliant only on a subject’s thoughts? If such a software is created, what are some of the applications to assistive technology, and how could this software be effectively utilized by impaired subpopulations?
-Hypothesis
+#### Hypothesis
 A brain computer interface that allows for robust context-switching between two modes–controlling a robotic arm for object manipulation and controlling an electric wheelchair for environment traversal–can be developed by analyzing signals produced by the subject’s motor imagery.
-Metrics
-Accuracy of responsiveness: to be an effective aid the BCI integrated software would need to have a high accuracy of responses, as it would need to perform tasks routinely. This can be measured through the level of accuracy of a subject’s desired response, versus the actual recorded response.
-Speed: in order for assistive technology to be effectively applied and used by people, it must have a high speed. This can be measured as the time delay between thought and the desired action running. We may also compare our BCI efficacy against a control who simply uses a physical controller/keyboard to control the robotic system.
+#### Metrics
+#####Accuracy of responsiveness: to be an effective aid the BCI integrated software would need to have a high accuracy of responses, as it would need to perform tasks routinely. This can be measured through the level of accuracy of a subject’s desired response, versus the actual recorded response.
+##### Speed: in order for assistive technology to be effectively applied and used by people, it must have a high speed. This can be measured as the time delay between thought and the desired action running. We may also compare our BCI efficacy against a control who simply uses a physical controller/keyboard to control the robotic system.
 If a bias is introduced, we should create the software such that it is averse to false positives: preferable to find difficulty to switch rather than spontaneously switch without command
 
 ### Accuracy of responsiveness
-How accurately am I able to evaluate this metric?
+#### How accurately am I able to evaluate this metric?
 This metric can’t be measured with extreme accuracy as it isn't able to be quantified, as opposed to other metrics like speed. The only useful numeric statistic derived from an experiment on this metric would be the percentage of accuracy (that is, how often the response matches the desired outcome). 
 Alternatively, we can measure the degree to which the system is accurate; this may be difficult to do with more advanced movements, but for simpler objectives, we can measure the distance it is off by, etc. 
-Are there multiple methods of evaluating this metric?
+#### Are there multiple methods of evaluating this metric?
 Yes, we can do a 2-measurement system where the response is either correct or incorrect. We can also measure the degree to which responses are accurate as stated above. This can be done in multiple ways such as distance off from desired position, functioning to a certain degree (such as 3 fingers moving when a fist was desired), and how long the software can maintain the desired output (length of accuracy). 
-How controllable are the factors that may cause variability in this metric?
+#### How controllable are the factors that may cause variability in this metric?
 It is possible that, apart from the actual software, that human subjects can result in variability. (demographically, we can consider physical age, (mental age? not sure how that would be measured reasonably) level of neurological function, etc.). If we primarily use people who are working on the software itself, it could very reasonably be controlled, as they will be most familiar with it. (Consider, also, the level of communication needed for people unfamiliar with the software to properly use it…does it require very specific instructions or will it be built to be more intuitive?) 
 ### Experiment Proposal
 Train a model to interpret motor-imagery commands using BCI 2000 to control a virtual cursor for inputs to the electric wheelchair and robotic arm.
 
 ![Virtual Cursor](https://github.com/ethanNguyenUser/crux-bci-9/blob/main/Pictures/virtualCursor.png)
 
-Figure 1. Virtual Cursor setup
+*Figure 1. Virtual Cursor setup*
 The subject will move the virtual cursor by using the BCI 2000 cursor module. When the cursor touches the regions denoting one of the four directional inputs, the BCI will register that as an input and continue holding that input
 Measure accuracy and speed of the robotic arm using PsychoPy protocols on a subject using the BCI
 Instruct the subject to prioritize accuracy over speed when conducting the following trials.
 
 ![PsychoPy GUI](https://github.com/ethanNguyenUser/crux-bci-9/blob/main/Pictures/psychoPyInstructions.png)
 
-Figure 2. Example instructions from PsychoPy GUI
+*Figure 2. Example instructions from PsychoPy GUI*
 Prompt the subject with one of the following random commands: “Move system right,” “Move system left,” “Move system up,” “Move system down”
 For the duration of the command being shown, the subject continuously tries to move the robotic system in this direction using motor imagery.
 Record accuracy as a time-measure comparing when: instruction A is being shown to subject vs. output A is being recorded by the BCI. 
@@ -118,7 +118,7 @@ Indirectly yes, as the signal generated by the user will induce a change in the 
 
 ![Data Flow Diagram](https://github.com/ethanNguyenUser/crux-bci-9/blob/main/Pictures/dataFlow.png)
 
-Figure 3. Diagram showing the directions data will be sent between the hardware/software
+*Figure 3. Diagram showing the directions data will be sent between the hardware/software*
 
 ### References
 Noninvasive Electroencephalogram Based Control of a Robotic Arm for Reach and Grasp Tasks: nature.com/articles/srep38565
