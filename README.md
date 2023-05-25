@@ -58,24 +58,24 @@ Yes, we can do a 2-measurement system where the response is either correct or in
 #### How controllable are the factors that may cause variability in this metric?
 It is possible that, apart from the actual software, that human subjects can result in variability. (demographically, we can consider physical age, (mental age? not sure how that would be measured reasonably) level of neurological function, etc.). If we primarily use people who are working on the software itself, it could very reasonably be controlled, as they will be most familiar with it. (Consider, also, the level of communication needed for people unfamiliar with the software to properly use it…does it require very specific instructions or will it be built to be more intuitive?) 
 ### Experiment Proposal
-Train a model to interpret motor-imagery commands using BCI 2000 to control a virtual cursor for inputs to the electric wheelchair and robotic arm.
+1. Train a model to interpret motor-imagery commands using BCI 2000 to control a virtual cursor for inputs to the electric wheelchair and robotic arm.
 
 ![Virtual Cursor](https://github.com/ethanNguyenUser/crux-bci-9/blob/main/Pictures/virtualCursor.png)
 
 *Figure 1. Virtual Cursor setup*
 
-The subject will move the virtual cursor by using the BCI 2000 cursor module. When the cursor touches the regions denoting one of the four directional inputs, the BCI will register that as an input and continue holding that input
+  - The subject will move the virtual cursor by using the BCI 2000 cursor module. When the cursor touches the regions denoting one of the four directional inputs, the BCI will register that as an input and continue holding that input
 Measure accuracy and speed of the robotic arm using PsychoPy protocols on a subject using the BCI
-Instruct the subject to prioritize accuracy over speed when conducting the following trials.
+ - Instruct the subject to prioritize accuracy over speed when conducting the following trials.
 
 ![PsychoPy GUI](https://github.com/ethanNguyenUser/crux-bci-9/blob/main/Pictures/psychoPyInstructions.png)
 
 *Figure 2. Example instructions from PsychoPy GUI*
 
-Prompt the subject with one of the following random commands: “Move system right,” “Move system left,” “Move system up,” “Move system down”
-For the duration of the command being shown, the subject continuously tries to move the robotic system in this direction using motor imagery.
-Record accuracy as a time-measure comparing when: instruction A is being shown to subject vs. output A is being recorded by the BCI. 
-Record the time between when the movement commands are issued vs. when the robotic system moves
+1. Prompt the subject with one of the following random commands: “Move system right,” “Move system left,” “Move system up,” “Move system down”
+2. For the duration of the command being shown, the subject continuously tries to move the robotic system in this direction using motor imagery.
+3. Record accuracy as a time-measure comparing when: instruction A is being shown to subject vs. output A is being recorded by the BCI. 
+4. Record the time between when the movement commands are issued vs. when the robotic system moves
 After at least four or so movement commands (there will be a random amount more, perhaps up to ten commands total), prompt the subject to switch contexts to control the other robotic system.
 Record the time it takes for a context to be switched and whether there were other commands issued between the instruction and the context switch
 Repeat steps b-f 15 times (should take about 10 minutes) for a total of 15 context switches
