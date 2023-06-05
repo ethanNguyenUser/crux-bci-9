@@ -1,0 +1,27 @@
+0.7072 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice', 'PTB', 'pyo', 'pygame'] (in that order).
+20.1444 	WARNING 	User requested fullscreen with size [1024  768], but screen is actually [1470, 956]. Using actual size
+20.7040 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, autoLog=True, backendConf=UNKNOWN, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x7fb04af24c10>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x7fb000a902e0>, multiSample=False, name='window1', numSamples=2, pos=[367.5, 239.0], screen=0, size=array([2940, 1912]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=True, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+20.7042 	EXP 	window1: mouseVisible = True
+20.7052 	EXP 	window1: mouseVisible = False
+20.7053 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+20.7053 	EXP 	window1: recordFrameIntervals = False
+20.8704 	EXP 	window1: recordFrameIntervals = True
+21.0538 	EXP 	Screen (0) actual frame rate measured at 60.05Hz
+21.0539 	EXP 	window1: recordFrameIntervals = False
+22.5037 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+22.5058 	EXP 	Created stimulus_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Baskerville', fontFiles=[], height=0.15, italic=False, languageStyle='LTR', name='stimulus_text', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+22.5060 	EXP 	window1: mouseVisible = True
+22.5134 	EXP 	text: autoDraw = True
+25.6611 	EXP 	Imported /Users/harpertzou/Desktop/crux_stimulus - Sheet1.csv as conditions, 5 conditions, 1 params
+25.6621 	EXP 	Created sequence: random, trialTypes=5, nReps=5, seed=None
+25.6625 	EXP 	New trial (rep=0, index=0): OrderedDict([('conditions', 'right arm')])
+25.6737 	DATA 	Keypress: space
+25.6804 	EXP 	text: autoDraw = False
+25.6804 	EXP 	stimulus_text: height = 0.15
+25.6804 	EXP 	stimulus_text: height = 0.15
+25.6804 	EXP 	stimulus_text: height = 0.15
+25.6804 	EXP 	stimulus_text: text = 'right arm'
+25.6804 	EXP 	stimulus_text: autoDraw = True
+26.9015 	DATA 	Keypress: left
+28.0225 	DATA 	Keypress: escape
+28.7686 	EXP 	window1: mouseVisible = True
