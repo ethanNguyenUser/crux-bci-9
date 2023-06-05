@@ -1,0 +1,66 @@
+0.7546 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice', 'PTB', 'pyo', 'pygame'] (in that order).
+6.3099 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, autoLog=True, backendConf=UNKNOWN, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x7f81bb69ac10>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x7f81596ca610>, multiSample=False, name='window1', numSamples=2, pos=[367.5, 239.0], screen=0, size=array([2940, 1912]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=True, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+6.3102 	EXP 	window1: mouseVisible = True
+6.3110 	EXP 	window1: mouseVisible = False
+6.3111 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+6.3111 	EXP 	window1: recordFrameIntervals = False
+6.4764 	EXP 	window1: recordFrameIntervals = True
+6.6598 	EXP 	Screen (0) actual frame rate measured at 59.98Hz
+6.6598 	EXP 	window1: recordFrameIntervals = False
+8.3290 	EXP 	Created introtext = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Baskerville', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='introtext', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+8.3294 	EXP 	Created stimulus = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Baskerville', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='stimulus', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+8.3379 	EXP 	introtext: autoDraw = True
+10.0136 	EXP 	Imported /Users/harpertzou/Desktop/crux_stimulus - Sheet1.csv as conditions, 5 conditions, 1 params
+10.0145 	EXP 	Created sequence: random, trialTypes=5, nReps=3, seed=None
+10.0149 	EXP 	New trial (rep=0, index=0): OrderedDict([('conditions', 'feet')])
+10.0265 	DATA 	Keypress: space
+10.0312 	EXP 	introtext: autoDraw = False
+10.0312 	EXP 	stimulus: height = 0.05
+10.0312 	EXP 	stimulus: height = 0.05
+10.0312 	EXP 	stimulus: height = 0.05
+10.0312 	EXP 	stimulus: text = 'feet'
+10.0312 	EXP 	stimulus: autoDraw = True
+17.0133 	EXP 	New trial (rep=0, index=1): OrderedDict([('conditions', 'head')])
+17.0262 	EXP 	stimulus: autoDraw = False
+17.0262 	EXP 	stimulus: height = 0.05
+17.0262 	EXP 	stimulus: height = 0.05
+17.0262 	EXP 	stimulus: height = 0.05
+17.0262 	EXP 	stimulus: text = 'head'
+17.0262 	EXP 	stimulus: autoDraw = True
+24.0129 	EXP 	New trial (rep=0, index=2): OrderedDict([('conditions', 'right arm')])
+24.0258 	EXP 	stimulus: autoDraw = False
+24.0258 	EXP 	stimulus: height = 0.05
+24.0258 	EXP 	stimulus: height = 0.05
+24.0258 	EXP 	stimulus: height = 0.05
+24.0258 	EXP 	stimulus: text = 'right arm'
+24.0258 	EXP 	stimulus: autoDraw = True
+31.0131 	EXP 	New trial (rep=0, index=3): OrderedDict([('conditions', 'left arm')])
+31.0257 	EXP 	stimulus: autoDraw = False
+31.0257 	EXP 	stimulus: height = 0.05
+31.0257 	EXP 	stimulus: height = 0.05
+31.0257 	EXP 	stimulus: height = 0.05
+31.0257 	EXP 	stimulus: text = 'left arm'
+31.0257 	EXP 	stimulus: autoDraw = True
+38.0104 	EXP 	New trial (rep=0, index=4): OrderedDict([('conditions', 'eyes')])
+38.0291 	EXP 	stimulus: autoDraw = False
+38.0291 	EXP 	stimulus: height = 0.05
+38.0291 	EXP 	stimulus: height = 0.05
+38.0291 	EXP 	stimulus: height = 0.05
+38.0291 	EXP 	stimulus: text = 'eyes'
+38.0291 	EXP 	stimulus: autoDraw = True
+45.0129 	EXP 	New trial (rep=1, index=0): OrderedDict([('conditions', 'head')])
+45.0260 	EXP 	stimulus: autoDraw = False
+45.0260 	EXP 	stimulus: height = 0.05
+45.0260 	EXP 	stimulus: height = 0.05
+45.0260 	EXP 	stimulus: height = 0.05
+45.0260 	EXP 	stimulus: text = 'head'
+45.0260 	EXP 	stimulus: autoDraw = True
+52.0129 	EXP 	New trial (rep=1, index=1): OrderedDict([('conditions', 'eyes')])
+52.0263 	EXP 	stimulus: autoDraw = False
+52.0263 	EXP 	stimulus: height = 0.05
+52.0263 	EXP 	stimulus: height = 0.05
+52.0263 	EXP 	stimulus: height = 0.05
+52.0263 	EXP 	stimulus: text = 'eyes'
+52.0263 	EXP 	stimulus: autoDraw = True
+52.8311 	DATA 	Keypress: escape
+53.4575 	EXP 	window1: mouseVisible = True
