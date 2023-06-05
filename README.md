@@ -1,13 +1,12 @@
 # crux-bci-9
 CruX BCI Team 9 GitHub Repository
 
-<<<<<<< HEAD
 Project Proposal: https://docs.google.com/document/d/1CXb2ZEh6SnwkfzvR8MbCsqIKvdNNTY0F7p7aPkmKjRU/edit?pli=1
 =======
 ## Poster
 ![Poster](https://github.com/ethanNguyenUser/crux-bci-9/blob/main/BCI%20Poster/1.png)
 
-## [Presentation Format](https://docs.google.com/presentation/d/1BqtsrBfNDqGUVem8tdIMUvQsRFDbliThsNez5g8zBbo/edit#slide=id.p)
+## [Google Slides Presentation](https://docs.google.com/presentation/d/1BqtsrBfNDqGUVem8tdIMUvQsRFDbliThsNez5g8zBbo/edit#slide=id.p)
 
 ## Proposal
 [Google Doc Version of Proposal](https://docs.google.com/document/d/1CXb2ZEh6SnwkfzvR8MbCsqIKvdNNTY0F7p7aPkmKjRU/edit?pli=1)
@@ -124,4 +123,3 @@ BCI 2000: ieeexplore.ieee.org/document/1300799
 BCI softwares: https://sccn.ucsd.edu/~scott/pdf/Brunner_BCI11.pdf
 BCI 2000 Cursor: https://www.bci2000.org/mediawiki/index.php/User_Reference:CursorTask
 OpenBCI Motor Imagery doc: docs.openbci.com/Examples/EEGProjects/MotorImagery/
->>>>>>> parent of 8407191 (Merge branch 'main' of https://github.com/ethanNguyenUser/crux-bci-9)
